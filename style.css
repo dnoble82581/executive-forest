@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.body {
+  font-family: 'Montserrat', sans-serif; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left;
+    background-color: #038c7f; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 4rem; }
+  .row .col-1-of-1 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 4rem) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 4rem) / 4); }
+
+.header {
+  background-color: #333333;
+  position: relative;
+  height: 15vh; }
+  .header__logo-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__logo {
+    height: 5rem; }
+  .header__text {
+    position: absolute;
+    color: white;
+    right: 20rem;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .header__text-link {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase; }
+      .header__text-link:not(:last-child) {
+        padding-right: 2rem; }
+
+.nav {
+  height: 10vh;
+  text-transform: uppercase;
+  background-color: #efefef;
+  position: relative; }
+  .nav__nav-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .nav__nav-list {
+    list-style-type: none; }
+  .nav__nav-item {
+    float: left;
+    font-size: 1.5rem; }
+    .nav__nav-item:not(:last-child) {
+      margin-right: 5rem; }
+    .nav__nav-item:hover {
+      transform: translateY(-2px);
+      cursor: pointer;
+      transition: all .2s ease;
+      color: #3fbf48;
+      display: inline-block;
+      box-shadow: 0 1.5rem 2rem rgba(51, 51, 51, 0.15); }
+
+.hero__left {
+  background-color: #333333;
+  height: 25rem; }
+
+.hero__right {
+  height: 25rem; }
+
+img {
+  max-width: 100%; }

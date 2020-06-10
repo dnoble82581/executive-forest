@@ -1,0 +1,18 @@
+{
+  "name": "executive-forest",
+  "version": "1.0.0",
+  "description": "Executive Forest Ecommerce Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "Executive",
+    "Forest"
+  ],
+  "author": "Dusty Noble",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
